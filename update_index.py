@@ -36,7 +36,7 @@ def write_README_md(root):
 
     def write(root, depth):
         for name in root['dirs']:
-            ppp =  os.path.join(root['dirs'][name]['path'], 'README.md').split('\\')[1:]
+            ppp =  os.path.join(root['dirs'][name]['path'], 'README.md')[len(docs_path):]
             s = '  '*depth + '- ['+name+'](' + ppp + ')\n'
             content.append(s)
             content.append('\n')
@@ -44,7 +44,7 @@ def write_README_md(root):
 
 
         for file in root['files']:
-            ppp =  os.path.join(root['path'], file).split('\\')[1:]
+            ppp =  os.path.join(root['path'], file)[len(docs_path):]
             s = '  '*depth + '- ['+file+'](' + ppp + ')\n'
             content.append(s)
             content.append('\n')
@@ -63,7 +63,7 @@ def write__sidebar_md(root):
 
     def write(root, depth):
         for name in root['dirs']:
-            ppp =  os.path.join(root['dirs'][name]['path'], 'README.md').split('\\')[1:]
+            ppp =  os.path.join(root['dirs'][name]['path'], 'README.md')[len(docs_path):]
             s = '  '*depth + '- ['+name+'](' + ppp + ')\n'
             content.append(s)
             content.append('\n')
@@ -71,7 +71,7 @@ def write__sidebar_md(root):
 
 
         for file in root['files']:
-            ppp =  os.path.join(root['path'], file).split('\\')[1:]
+            ppp =  os.path.join(root['path'], file)[len(docs_path):]
             s = '  '*depth + '- ['+file+'](' + ppp + ')\n'
             content.append(s)
             content.append('\n')
