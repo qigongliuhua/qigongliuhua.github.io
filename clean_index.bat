@@ -1,0 +1,1 @@
+python clean_index.py

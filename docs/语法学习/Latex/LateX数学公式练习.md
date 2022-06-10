@@ -1,10 +1,10 @@
-+ ![image-20220601175425441](LateX数学公式练习.assets/image-20220601175425441-16540772757461-16540772788153.png)
++ ![image-20220601175425441](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/image-20220601175425441-16540772757461-16540772788153.png)
 
 ​	如给出抽象函数求极限，可考虑用单调有界准则：若$x \rightarrow +\infty$ 时，$f(x)$ 单调增加（减少）且$f(x)$ 有上界（下界），则$\lim\limits_{x \rightarrow + \infty}\, f(x)$ 存在。
 
 ---
 
-+ ![image-20220601180035701](LateX数学公式练习.assets/image-20220601180035701.png)
++ ![image-20220601180035701](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/image-20220601180035701.png)
 
 **【例1.19】**设函数$\displaystyle{S(x) = \int_0^x \left| \cos t \right| \, \mathrm{d}t}$ .
 
@@ -32,7 +32,7 @@ $$
 
 ---
 
-+ ![image-20220601183553663](LateX数学公式练习.assets/image-20220601183553663.png)
++ ![image-20220601183553663](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/image-20220601183553663.png)
 
 $$
 \left( \frac{\partial z}{\partial x} \quad \frac{\partial z}{\partial y}  \right) = 
@@ -47,7 +47,7 @@ $$
 
 ---
 
-![image-20220601184453968](LateX数学公式练习.assets/image-20220601184453968.png)
+![image-20220601184453968](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/image-20220601184453968.png)
 $$
 \begin{align}
 \frac{\partial z}{\partial x} &= \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial x} + \frac{\partial z}{\partial u} \cdot \frac{\partial v}{\partial x} = vu^{v-1}(2x) + u^v(\ln u)y\\

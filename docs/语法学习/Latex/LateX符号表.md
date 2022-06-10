@@ -9,22 +9,6 @@
 | $\geqslant$ | \geqslant |  $\leqslant$  |  \leqslant  |   $\lgroup$   |   \lgroup   |
 |  $\cdots$   |  \cdots   |    $\dots$    |    \dots    |   $\vdots$    |   \vdots    |
 |  $\ddots$   |  \ddots   |               |             |               |             |
-|             |           |               |             |               |             |
-|             |           |               |             |               |             |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
