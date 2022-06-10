@@ -52,6 +52,7 @@ def write_README_md(root):
 
     for k in root:
         content = []
+        content.append('# ' + k + '\n')
         write(root[k], 0)
         with open(os.path.join(root[k]['path'], 'README.md'), 'w', encoding='utf-8') as f:
             f.writelines(content)

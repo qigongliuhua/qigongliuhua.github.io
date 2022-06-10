@@ -1,3 +1,4 @@
+# games
 - [102](docs\games\102\README.md)
 
   - [全局法实现极小曲面.md](docs\games\102\全局法实现极小曲面.md)
