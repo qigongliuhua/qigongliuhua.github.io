@@ -177,6 +177,7 @@ $$
 ​	如果算符不够用的话， amsmath 允许用户用` \DeclareMathOperator` 定义自己的算符，其中带星号的命令定义带上下限的算符：  
 
 ```latex
+// 网页端无法正常使用，typora可以正常使用
 \DeclareMathOperator{\argh}{argh}
 \DeclareMathOperator*{\nut}{Nut}
 \argh 3 = \nut_{x=1} 4x
@@ -229,6 +230,7 @@ P(i, j) = Q{n} \\
 \end{subarray}}
 P(i,j) = Q{n}\\
 
+// 右对齐网页无法显示，typora可以正常显示
 \sum_{\begin{subarray}{r}
 	0\le i \le n \\
 	j \in \mathbb{R}
@@ -246,12 +248,7 @@ P(i, j) = Q{n} \\
 	j \in \mathbb{R}
 \end{subarray}}
 P(i,j) = Q{n}\\
-
-\sum_{\begin{subarray}{r}
-	0\le i \le n \\
-	j \in \mathbb{R}
-\end{subarray}}
-P(i,j) = Q{n}
+
 $$
 
 ### 2.7 数学重音和上下括号
@@ -275,15 +272,15 @@ $$
 ```latex
 0.\overline{3} =
 \underline{\underline{1/3}} \\
-$\hat{XY} \qquad \widehat{XY} \\
-$\vec{AB} \qquad \overrightarrow{AB}
+\widehat{XY} \qquad \overrightarrow{AB}\\
+//下面的网页端无法正常显示，typora可以
+$\hat{XY} \qquad $\vec{AB} \\
 ```
 
 $$
 0.\overline{3} =
 \underline{\underline{1/3}} \\
-$\hat{XY} \qquad \widehat{XY} \\
-$\vec{AB} \qquad \overrightarrow{AB}
+\widehat{XY} \qquad \overrightarrow{AB}
 $$
 `\overbrace` 和 `\underbrace` 命令用来生成上/下括号，各自可带一个上/下标公式。  
 
@@ -373,6 +370,7 @@ $$
 ​	通常来讲应当避免写出超过一行而需要折行的长公式。如果一定要折行的话，习惯上优先在等号之前折行，其次在加号、减号之前，再次在乘号、除号之前。其它位置应当避免折行。amsmath 宏包的 `multline` 环境提供了书写折行长公式的方便环境。它允许用 `\\` 折行，将公式编号放在最后一行。多行公式的首行左对齐，末行右对齐，其余行居中。
 
 ```latex
+// 网页端无法正常显示，typora可以
 \begin{multline}
 a + b + c + d + e + f + g + h + i \\
 = j + k + l + m + n\\
@@ -398,58 +396,58 @@ $$
 ​	目前最常用的是 `align` 环境，它将公式用 `&` 隔为两部分并对齐。分隔符通常放在等号左边：
 
 ```latex
-\begin{align}
+\begin{aligned}
 a & = b + c\\
  & = d + e
-\end{align}
+\end{aligned}
 ```
 
 $$
-\begin{align}
+\begin{aligned}
 a & = b + c\\
  & = d + e
-\end{align}
+\end{aligned}
 $$
 `align` 还能够对齐多组公式，除等号前的 `&` 之外，公式之间也用 `&` 分隔：  
 
 ```latex
-\begin{align}
+\begin{aligned}
 a &=1 & b &=2 & c &=3 \\
 d &=-1 & e &=-2 & f &=-5
-\end{align}
+\end{aligned}
 ```
 
 $$
-\begin{align}
+\begin{aligned}
 a &=1 & b &=2 & c &=3 \\
 d &=-1 & e &=-2 & f &=-5
-\end{align}
+\end{aligned}
 $$
 如果我们不需要按等号对齐，只需罗列数个公式， `gather` 将是一个很好用的环境：  
 
 ```latex
-\begin{gather}
+\begin{gathered}
 a = b + c \\
 d = e + f + g \\
-h + i = j + k \notag \\
+h + i = j + k\\
 l + m = n
-\end{gather}
+\end{gathered}
 ```
 
 $$
-\begin{gather}
+\begin{gathered}
 a = b + c \\
 d = e + f + g \\
-h + i = j + k \notag \\
+h + i = j + k \\
 l + m = n
-\end{gather}
+\end{gathered}
 $$
 不用`gather`则行间距略大：
 
 ```latex
 a = b + c \\
 d = e + f + g \\
-h + i = j + k \notag \\
+h + i = j + k \\
 l + m = n
 ```
 
@@ -457,7 +455,7 @@ l + m = n
 $$
 a = b + c \\
 d = e + f + g \\
-h + i = j + k \notag \\
+h + i = j + k \\
 l + m = n
 $$
 
@@ -647,27 +645,27 @@ $$
 ```latex
 \newcommand\diff{\,\mathrm{d}}
 
-\begin{gather*}
+\begin{gathered}
 \int\int f(x)g(y)
 \diff x \diff y \\
 \int\!\!\!\int
 f(x)g(y) \diff x \diff y \\
 \iint f(x)g(y) \diff x \diff y \\
 \iint\quad \iiint\quad \idotsint
-\end{gather*}
+\end{gathered}
 ```
 
 $$
 \newcommand\diff{\,\mathrm{d}}
 
-\begin{gather*}
+\begin{gathered}
 \int\int f(x)g(y)
 \diff x \diff y \\
 \int\!\!\!\int
 f(x)g(y) \diff x \diff y \\
 \iint f(x)g(y) \diff x \diff y \\
 \iint\quad \iiint\quad \idotsint
-\end{gather*}
+\end{gathered}
 $$
 
 ## 6. 数学符号的字体控制
