@@ -11,6 +11,10 @@
 
     - [离散平均曲率流迭代算法.md](docs\games\102\离散平均曲率流迭代算法.md)
 
+- [论文](docs\论文\README.md)
+
+  - [Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md](docs\论文\Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md)
+
 - [语法学习](docs\语法学习\README.md)
 
   - [Latex](docs\语法学习\Latex\README.md)
