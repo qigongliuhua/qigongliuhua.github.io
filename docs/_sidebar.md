@@ -12,8 +12,6 @@
 
     - [离散平均曲率流迭代算法.md](docs\games\102\离散平均曲率流迭代算法.md)
 
-- [unity](docs\unity\README.md)
-
 - [数字几何处理](docs\数字几何处理\README.md)
 
   - [离散微分几何.md](docs\数字几何处理\离散微分几何.md)
