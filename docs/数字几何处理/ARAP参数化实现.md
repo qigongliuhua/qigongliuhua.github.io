@@ -101,8 +101,8 @@ $$
 其中 $he$ 是网格中半边的集合， $u_i$ 和 $x_i$ 是顶点 $i$ 的坐标， $t(i,j)$ 是包含半边 $(i,j)$ 的三角形， $\theta_{ij}$ 是 $t(i,j)$ 中 $(i,j)$ 的对角。令其梯度等于0，可以得到下面这个线性方程组：
 
 $$
-\sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big)(\mathbf{u}_i-\mathbf{u}_j) 
-= \sum_{j\in N(i)}\Big(\cot(\theta_{ij})L_{t(i,j)}+\cot(\theta_{ji})L_{t(j,i)}\Big)(\mathbf{x}_i-\mathbf{x}_j), \tag{3}\\
+\sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big)(\mathbf{u}_i-\mathbf{u}_j) \\
+= \sum_{j\in N(i)}\Big(\cot(\theta_{ij})L_{t(i,j)}(\mathbf{x}_i^{t(i,j)}-\mathbf{x}_j^{t(i,j)})+\cot(\theta_{ji})L_{t(j,i)}(\mathbf{x}_i^{t(j,i)}-\mathbf{x}_j^{t(j,i)})\Big), \tag{3}\\
 \forall \, i = 1,\cdots,n.
 $$
 令
@@ -115,26 +115,41 @@ c_{t_(i,j)} & d_{t_(i,j)}
 u_t  \\
 v_t
 \end{bmatrix} \qquad
-\mathbf{x_t} = \begin{bmatrix}
-x_t  \\
-y_t
-\end{bmatrix} 
+\mathbf{x_i^{t(j,i)}} = \begin{bmatrix}
+x_i^{t(j,i)}  \\
+y_i^{t(j,i)}
+\end{bmatrix}
 $$
 则 (3) 可进一步展开成
 $$
 \sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big)(u_i-u_j)= \\
-\sum_{j\in N(i)}\big( \cot(\theta_{ij})a_{t(i,j)} +\cot(\theta_{ji})a_{t(j,i)}\big)(x_i-x_j)
-+\big( \cot(\theta_{ij})b_{t(i,j)} +\cot(\theta_{ji})b_{t(j,i)}\big)(y_i-y_j) 
+\sum_{j\in N(i)}
+\Big\{
+\cot(\theta_{ij})\big( a_{t(i,j)}(x_i^{t(i,j)}-x_j^{t(i,j)}) +b_{t(i,j)}(y_i^{t(i,j)}-y_j^{t(i,j)})\big) \\
+
++\cot(\theta_{ji})\big(a_{t(j,i)}(x_i^{t(j,i)}-x_j^{t(j,i)})  +b_{t(j,i)}
+(y_i^{t(j,i)}-y_j^{t(j,i)})\big) 
+
+\Big\}
 \tag{4} \\ 
 \forall \, i = 1,\cdots,n
 $$
 
 $$
 \sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big)(v_i-v_j)= \\
-\sum_{j\in N(i)}\big( \cot(\theta_{ij})c_{t(i,j)} +\cot(\theta_{ji})c_{t(j,i)}\big)(x_i-x_j)
-+\big( \cot(\theta_{ij})d_{t(i,j)} +\cot(\theta_{ji})d_{t(j,i)}\big)(y_i-y_j)  \tag{5}
-\\\forall \, i = 1,\cdots,n
+\sum_{j\in N(i)}
+\Big\{
+\cot(\theta_{ij})\big( c_{t(i,j)}(x_i^{t(i,j)}-x_j^{t(i,j)}) +d_{t(i,j)}(y_i^{t(i,j)}-y_j^{t(i,j)})\big) \\
+
++\cot(\theta_{ji})\big(c_{t(j,i)}(x_i^{t(j,i)}-x_j^{t(j,i)})  +d_{t(j,i)}
+(y_i^{t(j,i)}-y_j^{t(j,i)})\big) 
+
+\Big\}
+\tag{4} \\ 
+\forall \, i = 1,\cdots,n
 $$
+
+注意方程右边每次累加都需要区分在哪一个三角面上，因为同一个点在不同三角面上的局部坐标不一致。另外就是如果边只有一个邻接面，则只需要计算这个面。
 
 由 (4) 可得 $u_1,u_2,\dots,u_n$ 。由 (5) 可得 $v_1,v_2,\dots,v_n$ 。
 
