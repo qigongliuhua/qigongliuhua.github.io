@@ -3,6 +3,8 @@
 
 - [全局法实现极小曲面.md](docs\games\102\全局法实现极小曲面.md)
 
+- [平面Voronoi图生成.md](docs\games\102\平面Voronoi图生成.md)
+
 - [曲线拟合.md](docs\games\102\曲线拟合.md)
 
 - [曲面参数化.md](docs\games\102\曲面参数化.md)
