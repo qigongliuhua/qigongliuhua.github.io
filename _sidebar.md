@@ -26,11 +26,17 @@
 
   - [离散微分几何.md](docs\数字几何处理\离散微分几何.md)
 
+- [数学](docs\数学\README.md)
+
+  - [数学公式和符号.md](docs\数学\数学公式和符号.md)
+
 - [论文](docs\论文\README.md)
 
   - [ARAP__A_LocalGlobal_Approach_to_Mesh_Parameterization.md](docs\论文\ARAP__A_LocalGlobal_Approach_to_Mesh_Parameterization.md)
 
   - [LSCM__Least_Squares_Conformal_Maps_for_Automatic_Texture_Atlas_Generation.md](docs\论文\LSCM__Least_Squares_Conformal_Maps_for_Automatic_Texture_Atlas_Generation.md)
+
+  - [Possion_Surface_Reconstruction.md](docs\论文\Possion_Surface_Reconstruction.md)
 
   - [QEM__Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md](docs\论文\QEM__Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md)
 
