@@ -23,6 +23,8 @@
 
   - [ARAP参数化实现.md](docs\数字几何处理\ARAP参数化实现.md)
 
+  - [ARAP形变.md](docs\数字几何处理\ARAP形变.md)
+
   - [使用双边法线滤波进行曲面去噪实现步骤.md](docs\数字几何处理\使用双边法线滤波进行曲面去噪实现步骤.md)
 
   - [离散微分几何.md](docs\数字几何处理\离散微分几何.md)
@@ -37,7 +39,7 @@
 
   - [LSCM__Least_Squares_Conformal_Maps_for_Automatic_Texture_Atlas_Generation.md](docs\论文\LSCM__Least_Squares_Conformal_Maps_for_Automatic_Texture_Atlas_Generation.md)
 
-  - [Possion_Surface_Reconstruction.md](docs\论文\Possion_Surface_Reconstruction.md)
+  - [Poisson_Surface_Reconstruction.md](docs\论文\Poisson_Surface_Reconstruction.md)
 
   - [QEM__Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md](docs\论文\QEM__Surface＿Simplification＿Using＿Quadric＿Error＿Metrics.md)
 
