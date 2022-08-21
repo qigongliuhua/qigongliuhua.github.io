@@ -68,13 +68,13 @@ Voronoi图是通过Delaunay三角网获得的，因此需要首先获得Delaunay
 
 
 
-![image-20220809112453572](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208091124615.png)
+![image-20220821163309720](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208211633756.png)
 
 
 
 
 
-![image-20220809112520057](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208091125086.png)
+![image-20220821163328797](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208211633830.png)
 
 
 
@@ -84,7 +84,7 @@ Voronoi图是通过Delaunay三角网获得的，因此需要首先获得Delaunay
 
 
 
-![image-20220809112453572](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208091126516.png)
+![image-20220821162900755](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208211629816.png)
 
 
 
@@ -92,5 +92,17 @@ Voronoi图是通过Delaunay三角网获得的，因此需要首先获得Delaunay
 
 
 
-![image-20220809112812451](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208091128488.png)
+![image-20220821162922680](https://qglh-tuchuang.oss-cn-hangzhou.aliyuncs.com/markdown_img/202208211629713.png)
+
+> 多边形重心坐标计算公式：
+>
+> 记号 $(x_N,y_N)$ 同 $(x_0, y_0)$ 。多边形面积为：
+> $$
+> A = \frac{1}{2}\sum_{i=0}^{N-1}(x_iy_{i+1}-x_{i+1}y_i)
+> $$
+> 多边形的重心由下式给出：
+> $$
+> C_x=\frac{1}{6A}\sum_{i=0}^{N-1}(x_i+x_{i+1})(x_iy_{i+1}-x_{i+1}y_i) \\
+> C_y=\frac{1}{6A}\sum_{i=0}^{N-1}(y_i+y_{i+1})(x_iy_{i+1}-x_{i+1}y_i)
+> $$
 
