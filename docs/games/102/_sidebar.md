@@ -1,3 +1,7 @@
+- [mixed_voronoi_cell.md](docs\games\102\mixed_voronoi_cell.md)
+
+- [test.md](docs\games\102\test.md)
+
 - [使用QEM的曲面简化算法.md](docs\games\102\使用QEM的曲面简化算法.md)
 
 - [全局法实现极小曲面.md](docs\games\102\全局法实现极小曲面.md)
