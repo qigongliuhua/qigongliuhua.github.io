@@ -1,4 +1,16 @@
 # docs
+- [CCF模拟题](docs\CCF模拟题\README.md)
+
+  - [202203-1-未初始化警告.md](docs\CCF模拟题\202203-1-未初始化警告.md)
+
+  - [202203-2-出行计划.md](docs\CCF模拟题\202203-2-出行计划.md)
+
+  - [202206-3-角色授权.md](docs\CCF模拟题\202206-3-角色授权.md)
+
+  - [202206-4-光线追踪.md](docs\CCF模拟题\202206-4-光线追踪.md)
+
+  - [202206-5-PS无限版.md](docs\CCF模拟题\202206-5-PS无限版.md)
+
 - [games](docs\games\README.md)
 
   - [102](docs\games\102\README.md)
