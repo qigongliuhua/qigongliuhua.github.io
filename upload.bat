@@ -1,7 +1,7 @@
 call update_index.bat
 git add .
 git commit -m "update"
-git push origin master
+git push
 call clean_index.bat
 
 pause
