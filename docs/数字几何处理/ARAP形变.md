@@ -1,4 +1,4 @@
-> **As-Rigid-As-Possible Surface Modeling  **
+>  **As-Rigid-As-Possible Surface Modeling ** 
 
 
 
@@ -23,7 +23,7 @@ $$
 
 
 
-在对 $S_i$ 进行SVD分解得 $S_i=U_i\Sigma_i Vi^T$ 。则 $R_i=V_iU_i^T$ ，如果 $\|R_i\|<0$ ，则让 $U_i$ 的最小奇异值对应的列取反，即第三列取反，以此保证 $\|R_i\|>0$ 。
+再对 $S_i$ 进行SVD分解得 $S_i=U_i\Sigma_i Vi^T$ 。则 $R_i=V_iU_i^T$ ，如果 $\|R_i\|<0$ ，则让 $U_i$ 的最小奇异值对应的列取反，即第三列取反，以此保证 $\|R_i\|>0$ 。
 
 
 
