@@ -54,6 +54,8 @@
 
   - [数学公式和符号.md](docs\数学\数学公式和符号.md)
 
+  - [矩阵微积分.md](docs\数学\矩阵微积分.md)
+
 - [论文](docs\论文\README.md)
 
   - [ARAP__A_LocalGlobal_Approach_to_Mesh_Parameterization.md](docs\论文\ARAP__A_LocalGlobal_Approach_to_Mesh_Parameterization.md)
