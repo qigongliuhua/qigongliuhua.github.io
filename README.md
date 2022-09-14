@@ -33,10 +33,6 @@
 
 - [算法设计](docs\算法设计\README.md)
 
-  - [半边数据结构设计](docs\算法设计\半边数据结构设计\README.md)
-
-    - [半边数据结构设计与实现.md](docs\算法设计\半边数据结构设计\半边数据结构设计与实现.md)
-
 - [网格课程](docs\网格课程\README.md)
 
   - [games102](docs\网格课程\games102\README.md)

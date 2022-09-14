@@ -58,6 +58,11 @@ crossorigin="anonymous"
   <div id="app">稍等...</div>
   <script src="//cdn.jsdelivr.net/npm/mermaid@8.0.0-rc.8/dist/mermaid.min.js"></script>
   <script>
+    mermaid.initialize({
+        startOnLoad: false,
+      });
+    let id = 0;
+
     window.$docsify = {
       logo: '/ic_launcher.png',
       name: 'qglh',
@@ -145,6 +150,8 @@ crossorigin="anonymous"
         color: "var(--theme-color,#42b983)",
         height: "3px",
       },
+
+
 
       markdown: {
           renderer: {

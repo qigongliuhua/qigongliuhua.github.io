@@ -121,12 +121,13 @@ y_i^{t(j,i)}
 \end{bmatrix}
 $$
 则 (3) 可进一步展开成
+
+
 $$
-\sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big)(u_i-u_j)= \\
+\sum_{j\in N(i)}\Big(\cot(\theta_{ij})+\cot(\theta_{ji})\Big) (u_i-u_j)= \\
 \sum_{j\in N(i)}
 \Big\{
 \cot(\theta_{ij})\big( a_{t(i,j)}(x_i^{t(i,j)}-x_j^{t(i,j)}) +b_{t(i,j)}(y_i^{t(i,j)}-y_j^{t(i,j)})\big) \\
-
 +\cot(\theta_{ji})\big(a_{t(j,i)}(x_i^{t(j,i)}-x_j^{t(j,i)})  +b_{t(j,i)}
 (y_i^{t(j,i)}-y_j^{t(j,i)})\big) 
 
@@ -148,6 +149,8 @@ $$
 \tag{4} \\ 
 \forall \, i = 1,\cdots,n
 $$
+
+
 
 注意方程右边每次累加都需要区分在哪一个三角面上，因为同一个点在不同三角面上的局部坐标不一致。另外就是如果边只有一个邻接面，则只需要计算这个面。
 
